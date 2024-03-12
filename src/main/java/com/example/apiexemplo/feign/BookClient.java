@@ -6,7 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
 
-@FeignClient(name = "book-api", url = "https://first-books-api.s3.amazonaws.com")
+
+@FeignClient(name = "book-api", url = "${URL_AWS}")
 
 public interface BookClient {
 
